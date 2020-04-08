@@ -1,0 +1,28 @@
+{
+    "name": "webtoppings/ipwhitelisting",
+    "description": "Restrict access to website by whitelisting ip addresses",
+    "type": "laravel-package",
+    "authors": [
+        {
+            "name": "Parixit Patel",
+            "email": "patelparixit07@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": ">=5.5",
+        "laravelcollective/html": ">=5.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WebToppings\\IPWhitelisting\\IPWhitelistingServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "WebToppings\\IPWhitelisting\\": "src/"
+        }
+    }
+}
