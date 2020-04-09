@@ -41,10 +41,12 @@ Route::resource('/ipwhitelisting', '\WebToppings\IPWhitelisting\IPWhitelistingCo
 Use middleware to restrict IP Addresses
 
 ```php
-'IPBlocking' => \WebToppings\IPWhitelisting\Middlewares\IPBlocking::class
+'IPBlocking' => \WebToppings\IPWhitelisting\Middlewares\IPBlocking::class,
 ```
 
-Add ```IPBlocking``` middleware to route group for which you want to restrict access
+Add ```IPBlocking``` middleware to route group for which you want to restrict access.
+
+Users will be redirect to "403 | Forbidden" page if their IP won't exist on whitelist.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
