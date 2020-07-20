@@ -1,6 +1,6 @@
 # IP Whitelisting
 
-Simple laravel package to restrict access to website by white listing IP Addresses.
+Simple Laravel Package to increase the security of the website by permitting access for users having whitelisted IP Addresses.
 
 In this package, you can add IP Addresses into whitelist which you want to allow access to your site. All other users coming from IPs which are not in whitelist will automatically blocked and won't access site. 
 
